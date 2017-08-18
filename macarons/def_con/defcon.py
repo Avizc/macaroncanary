@@ -1,4 +1,4 @@
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import time # This is for checking on the transparency report
 from datetime import date # Get the date
 import json
@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup # Huzzah to BeautifulSoup cuteness!
 # Lets use the urllib3 library to get the report!
 # https://www.defcon.org/html/links/dc-transparency.html
 #
-transparency_report=urllib.urlopen('https://www.defcon.org/html/links/dc-transparency.html').read()
+transparency_report=urllib.request.urlopen('https://www.defcon.org/html/links/dc-transparency.html').read()
 
 ################################
 #  Playing with BeautifulSoup  #
@@ -45,45 +45,58 @@ report=soup.find_all('code')
 # Hopefully pull stuff into macarons?
 for macarons in report:
     # macarons is printing correctly
-    print macarons
+    # print(macarons)
     #
-    # This is currently not working
-    # with open("defcon.json", "w") as writeJSON:
-    #     json.dump(macarons, writeJSON)
+    # This is working sending to defcon.txt
+    # Out of scope for this week to do JSON
+    # Will work on it in the future!
+    with open("defcon.txt", "w") as writeTXT:
+        print(macarons,file=writeTXT)
 
 #######################
 #  Playing with time  #
 #######################
 # Lets print today's date
 #
-today=date.today()
-print "Today's date!",today
+# today=date.today()
+# print "Today's date!",today
 #
 # Lets print a future date
 #
-october=date(today.year,10,1)
-print "This is for 1 October",october
+# october=date(today.year,10,1)
+# print "This is for 1 October",october
 #
 # Test out dates
 #
-test_date=date(today.year,3,5)
-print test_date
-another_date=date(today.year,5,7)
-print another_date
-same_date=date(today.year,3,5)
-print same_date
+# test_date=date(today.year,3,5)
+# print test_date
+# another_date=date(today.year,5,7)
+# print another_date
+# same_date=date(today.year,3,5)
+# print same_date
 #
-if test_date==another_date:
-    print "This isn't working, they should be different days"
-else:
-    print "This is working, they are different days"
+# if test_date==another_date:
+#     print "This isn't working, they should be different days"
+# else:
+#     print "This is working, they are different days"
 #
 # Cool that worked!
 #
-if test_date!=same_date:
-    print "This isn't working, they are the same date"
-else:
-    print "This is working, they are the same date"
+# if test_date!=same_date:
+#     print "This isn't working, they are the same date"
+# else:
+#     print "This is working, they are the same date"
 #
 # Cool that worked, too!
 #
+today=date.today()
+print("This is today's date, today!", today)
+today_maybe=(today.year,8,18)
+print("This should be today's date", today_maybe)
+macarons=date(today.year,10,1) # Next date-ish it should update
+if today_maybe==today:
+    today_maybe=today_maybe.replace(month=today.month+2)
+print("This should be two months ahead of today",today_maybe)
+# if macarons==today:
+#     macarons=macarons.replace(month=today.month+2)
+# print macarons
