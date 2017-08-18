@@ -1,0 +1,53 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+
+Riseup positively confirms that the integrity of our system is sound: all our infrastructure is in our control, we have not been compromised or suffered a data breach, we have not disclosed any private encryption keys, and we have not been forced to modify our system to allow access or information leakage to a third party.
+
+This canary will be re-signed on the following dates:
+
+* February 1
+* May 1
+* August 1
+* November 1
+
+We will include a link to a recent news article[1] in each update to establish that the signature was not pre-generated. 
+ 
+h2. Frequently asked questions
+
+Q: Are you compromised by law enforcement?
+
+A: No. We have never permitted installation of any hardware or software monitoring on any system that we control; law enforcement has not taken our servers; does not, and has never had access to them. We would rather stop being Riseup before we did that.
+
+Q: Couldn't the government just make you say that?
+
+A: Forced speech is actually quite rare in the US legal context. It's usually only in cases of consumer protection where the government has been successful in compelling speech (e.g. forced cigarette warnings). Nevertheless, no they aren't forcing us to say anything.
+
+Q: Why didn't you update your canary on time in the winter of 2016?
+
+A: The canary was so broad that any attempt to issue a new one would be a violation of a gag order related to an investigation into a DDoS extortion ring and ransomware operation[0]. This is not desirable, because if any one of a number of minor things happen, it signals to users that a major thing has happened.
+
+Q: Why does the new Canary not mention gag orders, FISA court orders, National Security Letters, etc?
+
+A: Our initial Canary strategy was only harming users by freaking them out unnecessarily when minor events happened. A Canary is supposed to signal important risk information to users, but there is also danger in signaling the wrong thing to users or leading to general fear and confusion for no good reason. The current Canary is limited to significant events that could compromise the security of Riseup users.
+
+0. https://riseup.net/about-us/press/canary-statement
+1. https://theintercept.com/2017/07/31/pentagon-cameroon-torture-salak-state-department/
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJKBAEBCgA0FiEETgeRJo98Z+q+iPGwMEPitxOado4FAlmAGcQWHGNvbGxlY3Rp
+dmVAcmlzZXVwLm5ldAAKCRAwQ+K3E5p2jpJND/4mCcke09xsJPHD3b3ihziTRSCy
+JDYc055FJu72Rh1VNElwKm6nnCqYehBBsuDw6iF8P+UvydCehrioucWtCbVwj0cC
+snBCFTnAkJ/TfxjDzw7KuBxJea0esKPhWEjq8O7kxitekDME4zvrCd8lMwgipgdy
+qiVnWJnC7aenpkv5FwoTseHL5KI8nMQnrt4TN4o/gIsniBP+JgbKOqHCF7yFsTa9
+UiXyDOxZuebIoLJFq04Ak+9eTXfi9/TqwDBdLLtK8R514QJ9l0WqVgnAyd0o6iL9
+7Vh0mT9i0QdMnYLvTIRWI0UgK2WdtdP6ECAENMjRYf0PgupUo3IoX+1jGb0usAUR
+Jm3diZoxZzNkGTIVyWPja31OdKc+4d1bTJzeQYrArdlGSykyHlKW/FSilW902+4M
+IpAw/TywmTqxYYK4OXh5gajFrQa8KvyPUi5c0orBMirYymR+3XumXAVghz3aVuMc
+hc8pn9E+Ys5rfXWcgMF7tHhzEnjUyE/UUO0stkqpwbKmG0ps+Kjwpky6gOtTR9ol
+7CeVdSrEf3YO0yobDYq+X0HucpvGlIMAgmJW2vLEPXFkJYn4qP+CJ333ElfhiI80
+g1VxGfaNEro8VXSW4GkB0XhpRvaIWACyy3oiGS2dRJCkcFs55+k5JKRInGylMaDl
+4Dm9n0NY2q37N+eXSA==
+=yLFe
+-----END PGP SIGNATURE-----
