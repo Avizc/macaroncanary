@@ -1,6 +1,6 @@
 import urllib
 import time # This is for checking on the transparency report
-import datetime # Also for the transparency report
+from datetime import date # Get the date
 import json
 from bs4 import BeautifulSoup # Huzzah to BeautifulSoup cuteness!
 
@@ -54,3 +54,36 @@ for macarons in report:
 #######################
 #  Playing with time  #
 #######################
+# Lets print today's date
+#
+today=date.today()
+print "Today's date!",today
+#
+# Lets print a future date
+#
+october=date(today.year,10,1)
+print "This is for 1 October",october
+#
+# Test out dates
+#
+test_date=date(today.year,3,5)
+print test_date
+another_date=date(today.year,5,7)
+print another_date
+same_date=date(today.year,3,5)
+print same_date
+#
+if test_date==another_date:
+    print "This isn't working, they should be different days"
+else:
+    print "This is working, they are different days"
+#
+# Cool that worked!
+#
+if test_date!=same_date:
+    print "This isn't working, they are the same date"
+else:
+    print "This is working, they are the same date"
+#
+# Cool that worked, too!
+#
