@@ -40,12 +40,12 @@ report=soup.find_all('code')
 # Aw golly this works too!
 #
 # for code in report:
-#     print code
+#     print(code)
 
 # Hopefully pull stuff into macarons?
 for macarons in report:
     # macarons is printing correctly
-    # print(macarons)
+    print("##### BELOW IS MACARONS #####",macarons,"##### THE ABOVE IS MACARONS #####")
     #
     # This is working sending to defcon.txt
     # Out of scope for this week to do JSON
@@ -58,34 +58,34 @@ for macarons in report:
 #######################
 # Lets print today's date
 #
-# today=date.today()
-# print "Today's date!",today
+todays_date=date.today()
+print("Today's date!",todays_date)
 #
 # Lets print a future date
 #
-# october=date(today.year,10,1)
+# october=date(todays_date.year,10,1)
 # print "This is for 1 October",october
 #
 # Test out dates
 #
-# test_date=date(today.year,3,5)
-# print test_date
-# another_date=date(today.year,5,7)
-# print another_date
-# same_date=date(today.year,3,5)
-# print same_date
+test_date=date(todays_date.year,3,5)
+print("Print 5 March 2017",test_date)
+another_date=date(todays_date.year,5,7)
+print("Print 7 May 2017",another_date)
+same_date=date(todays_date.year,3,5)
+print("Print 5 March 2017",same_date)
 #
-# if test_date==another_date:
-#     print "This isn't working, they should be different days"
-# else:
-#     print "This is working, they are different days"
+if test_date==another_date:
+    print("This isn't working, they should be different days")
+else:
+    print("This is working, they are different days")
 #
 # Cool that worked!
 #
-# if test_date!=same_date:
-#     print "This isn't working, they are the same date"
-# else:
-#     print "This is working, they are the same date"
+if test_date!=same_date:
+    print("This isn't working, they are the same date")
+else:
+    print("This is working, they are the same date")
 #
 # Cool that worked, too!
 #
@@ -96,7 +96,7 @@ print("This should be today's date", today_maybe)
 macarons=date(today.year,10,1) # Next date-ish it should update
 if today_maybe==today:
     today_maybe=today_maybe.replace(month=today.month+2)
-print("This should be two months ahead of today",today_maybe)
+# print("This should be two months ahead of today",today_maybe)
 # if macarons==today:
 #     macarons=macarons.replace(month=today.month+2)
 # print macarons
